@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chess Bot Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="logo">Home</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="../projects.html">My Projects</a></li>
+					<li><a href="elements.html">Skills</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/sebasti%C3%A1n-ondru%C5%A1-29b173282/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="major">
+						<h1>Chess User Interface </br>
+                        for chess ai</h1>
+						<p>The web-based user interface for my chess bot that allows users to interact seamlessly with the bot, setting up chess positions, making moves, and tracking game history..</p>
+						<div>
+							<a href="https://github.com/SebastianOndrus/Chess-Bot-Project" target="_blank" class="button icon brands fa-github">GitHub</a>
+						</div>
+                        
+					</header>
+                    <div class="box alt">
+                        <div class="row gtr-50 gtr-uniform">
+                            <div class="col-6"><span class="image fit"><img src="../images/gui-midgame.png" alt="" /></span></div>
+                            <div class="col-6"><span class="image fit"><img src="../images/gui-midgame.png" alt="" /></span></div>
+                        </div>
+                    </div>
+					<h3>Technologies Used</h3>
+					<ul>
+						<li><b>Visuals:</b> React.js, chessboardjsx</li>
+						<li><b>Game Logic:</b> chess.js</li>
+						<li><b>Communication:</b> Axios (HTTP requests)</li>
+					</ul>
+					<h3>User Interface Creation</h3>
+					<p>The graphical user interface is built as a web application using React.js and chessboardjsx. It provides an intuitive interface for players to interact with the chessboard, make moves, and receive move recommendations.</p>
+					<h3>Features</h3>
+					<ul>
+						<li><b>Move Highlighting:</b> Highlights valid moves for selected pieces.</li>
+						<li><b>Undo Move:</b> Allows players to undo their last move.</li>
+						<li><b>Flip Board:</b> Option to flip the orientation of the chessboard.</li>
+						<li><b>Apply FEN:</b> Set the game state using FEN notation.</li>
+						<li><b>Move Prediction:</b> Receive move recommendations from the chess bot.</li>
+						<li><b>History Tracking:</b> View and navigate through the game's move history.</li>
+					</ul>
+					<h3>Communication with Chess Bot</h3>
+					<p>The prediction of chess moves is handled by a separate Python script. To enable communication between the frontend and the chess bot, the Axios library is used to make HTTP requests. The application sends the current game state in FEN format to the local URL http://localhost:5000/predict_move when the "Show Move" or "Make Move" button is pressed. Upon successful processing by the chess bot, a recommended move in text format is returned. This move is then parsed to create the necessary Move object.</p>
+                    
+                </section>
+			</div>
+
+			<!-- Copyright -->
+            <div id="copyright">
+                <ul><li>&copy; Sebastián Ondruš</li></li></ul>
+            </div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
